@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>array2</title>
+</head>
+<body>
+
+</body>
+<script>
+	var myFruits=["one","two","three"];
+	for(var i=0; i<myFruits.length;i++){
+		console.log("item"+myFruits[i]+"at position"+i);
+	}
+
+	var ages=[32,25,18,10];
+	var isAllAdults=ages.every(function (age) {
+		return age>=18;
+		
+	});
+	console.log(isAllAdults);
+
+
+	var ages=[32,25,18,10];
+	var isAllAdults=ages.some(function (age) {
+		return age>=18;
+		
+	});
+	console.log(isAllAdults);
+
+
+	var ages=[32,25,18,10];
+	var isAllAdults=ages.filter(function (age) {
+		return age>=18;
+		
+	});
+	console.log(isAllAdults);
+
+
+
+	var myMarks=[50,62,90];
+	var myNewMarks=myMarks.map(function (mark) {
+		return mark+10;
+		
+	});
+	console.log(myNewMarks);
+
+
+
+
+
+</script>
+</html>
